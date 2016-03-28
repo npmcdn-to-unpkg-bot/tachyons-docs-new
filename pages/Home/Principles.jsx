@@ -1,10 +1,9 @@
 
 import React, { Component } from 'react'
 import _ from 'lodash'
-import Flex from 'reflexbox'
-import Principle from './Principle.jsx'
+import Wrap from './Wrap.jsx'
 
-let data = [
+const data = [
   {
     'title': 'Responsive',
     'body': "Everything should be 100% responsive. Your website should work regardless of a users device or screensize. Don't break the functionality of HTML with CSS.",
@@ -39,13 +38,10 @@ let data = [
 
 export default class Principles extends Component {
   render() {
-    data = _.sortBy(data, 'id')
     return (
       <article className='ph3 ph5-ns tl tl-ns bt b--light-gray pv3 pv5-ns' id='priciples'>
         <h1>Principles</h1>
-        <section style={{display: 'flex', flexWrap: 'wrap'}}>
-          {_.map(data, (input) => <Principle data={input} key={input.id} />)}
-        </section>
+        <Wrap data={data} />
       </article>
     )
   }
