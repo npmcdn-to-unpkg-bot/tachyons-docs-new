@@ -1,12 +1,6 @@
-/**
- * React Static Boilerplate
- * https://github.com/koistya/react-static-boilerplate
- * Copyright (c) Konstantin Tarkus (@koistya) | MIT license
- */
 
-import React, { Component, PropTypes } from 'react';
-import './Link.scss';
-import Location from '../../lib/Location';
+import React, { Component, PropTypes } from 'react'
+import Location from '../lib/Location'
 
 function isLeftClickEvent(event) {
   return event.button === 0;
@@ -16,14 +10,14 @@ function isModifiedEvent(event) {
   return !!(event.metaKey || event.altKey || event.ctrlKey || event.shiftKey);
 }
 
-class Link extends Component {
+export default class Link extends Component {
 
   static propTypes = {
     to: PropTypes.string.isRequired,
     children: PropTypes.element.isRequired,
     state: PropTypes.object,
     onClick: PropTypes.func,
-  };
+  }
 
   static handleClick = event => {
     let allowTransition = true;
@@ -49,13 +43,11 @@ class Link extends Component {
         this.props && this.props.state || null,
         this.props && this.props.to || (link.pathname + link.search));
     }
-  };
+  }
 
-  render() {
+  render () {
     const { to, children, ...props } = this.props;
     return <a onClick={Link.handleClick.bind(this)} {...props}>{children}</a>;
   }
 
 }
-
-export default Link;
