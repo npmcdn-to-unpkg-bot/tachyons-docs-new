@@ -1,5 +1,6 @@
 
 import React, { Component } from 'react'
+import GithubButtons from './GithubButtons.jsx'
 
 export default class Footer extends Component {
   render () {
@@ -23,10 +24,7 @@ export default class Footer extends Component {
             Components
           </a>
         </div>
-        <article>
-          <iframe src='https://ghbtns.com/github-btn.html?user=tachyons-css&repo=tachyons&type=star&count=true' frameBorder='0' scrolling='0' width='100px' height='20px'></iframe>
-          <iframe src='https://ghbtns.com/github-btn.html?user=tachyons-css&repo=tachyons&type=fork&count=true' frameBorder='0' scrolling='0' width='100px' height='20px'></iframe>
-        </article>
+        <GithubButtons />
         <div className='mt4'>
           <a className='black-70 link dim b dib mr3 pv2' href='http://tachyons-slack-invite.herokuapp.com' title='Join our Slack Channel'>
             Join our Slack Channel
