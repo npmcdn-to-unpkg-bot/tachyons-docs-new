@@ -1,0 +1,52 @@
+{
+  "name": "tachyons-docs-new",
+  "version": "0.0.1",
+  "description": "New docs for tachyons.io based on React",
+  "main": "data/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lachlanjc/tachyons-docs-new.git"
+  },
+  "keywords": [
+    "css",
+    "oocss",
+    "performance",
+    "documentation",
+    "tachyons"
+  ],
+  "contributors": [
+    {
+      "name": "adam morse",
+      "email": "hi@mrmrs.cc"
+    },
+    {
+      "name": "robert forloine",
+      "url": "http://www.sndsgn.com"
+    },
+    {
+      "name": "david potsiadlo",
+      "url": "http://www.davidpots.com/"
+    },
+    {
+      "name": "tyler benziger",
+      "url": "http://tybenz.com"
+    },
+    {
+      "name": "john otander",
+      "url": "http://johnotander.com"
+    },
+    {
+      "name": "lachlan campbell",
+      "url": "http://lachlanjc.me",
+      "email": "lachlan.campbell@icloud.com"
+    }
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lachlanjc/tachyons-docs-new/issues"
+  },
+  "homepage": "http://lachlanjc.me/tachyons-docs-new"
+}
