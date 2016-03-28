@@ -1,20 +1,13 @@
-/**
- * React Static Boilerplate
- * https://github.com/koistya/react-static-boilerplate
- * Copyright (c) Konstantin Tarkus (@koistya) | MIT license
- */
 
 import React, { Component } from 'react';
 
-export default class extends Component {
-
-  render() {
+export default class LostPage extends Component {
+  render () {
     return (
-      <div>
-        <h1>Not Found</h1>
-        <p>The page you're looking for was not found.</p>
-      </div>
-    );
+      <article className='mw7 center'>
+        <h1>404 – Not Found</h1>
+        <p>Uhh...maybe go back to the <a href='/' className='blue'>homepage</a>? 😐</p>
+      </article>
+    )
   }
-
 }
