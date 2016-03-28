@@ -12,15 +12,15 @@ export default class Header extends Component {
           </a>
         </div>
         <nav className='db dtc v-mid w-100 tr'>
-          <a title='Documentation' href='/docs/'
+          <a title='Documentation' href='/docs'
               className='f6 fw6 dim link black-70 mr1 mr3-m mr4-l dib'>
             Docs
           </a>
-          <a title='Components' href='/components/'
+          <a title='Components' href='/components'
               className='f6 fw6 dim link black-70 mr1 mr3-m mr4-l dib'>
             Components
           </a>
-          <a title='Tachyons on GitHub' href='http://github.com/tachyons-css/tachyons/'
+          <a title='Tachyons on GitHub' href='http://github.com/tachyons-css/tachyons'
               className='f6 fw6 dim link black-70 mr1 mr3-m mr4-l dn dib-ns'>
             GitHub
           </a>
