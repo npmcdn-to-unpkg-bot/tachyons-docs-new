@@ -80,18 +80,7 @@ const config = {
         loader: 'file-loader',
       },
     ],
-  },
-  postcss: function plugins() {
-    return [
-      require('postcss-import')({
-        onImport: files => files.forEach(this.addDependency),
-      }),
-      require('precss')(),
-      require('autoprefixer')({
-        browsers: AUTOPREFIXER_BROWSERS
-      }),
-    ];
-  },
+  }
 };
 
 // Configuration for the client-side bundle
@@ -145,10 +134,6 @@ const appConfig = merge({}, config, {
         },
       }) : JS_LOADER,
       ...config.module.loaders,
-      {
-        test: /\.scss$/,
-        loaders: ['style-loader', 'css-loader', 'postcss-loader'],
-      },
     ],
   },
 });
@@ -177,10 +162,6 @@ const pagesConfig = merge({}, config, {
     loaders: [
       JS_LOADER,
       ...config.module.loaders,
-      {
-        test: /\.scss$/,
-        loaders: ['css-loader', 'postcss-loader'],
-      },
     ],
   },
 });
