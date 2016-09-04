@@ -22,7 +22,7 @@ export default class Html extends Component {
           <meta name='description' content={this.props.description || description} />
           <meta name='viewport' content='width=device-width, initial-scale=1' />
           <link rel='apple-touch-icon' href='apple-touch-icon.png' />
-          <link rel='stylesheet' href='//npmcdn.com/tachyons@4.0.0-beta.16/css/tachyons.min.css' />
+          <link rel='stylesheet' href='//unpkg.com/tachyons@4.0.0-beta.16/css/tachyons.min.css' />
           <style>{'.blue { color: #0074D9; } .bg-blue { background-color: #0074D9; }'}</style>
           <script src={'/app.js?' + new Date().getTime()}></script>
         </head>
